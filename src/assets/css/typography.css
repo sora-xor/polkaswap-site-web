@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400..700&family=Unbounded:wght@800&display=swap');
+
+body {
+  font-family: 'Sora', sans-serif;
+  font-size: var(--text-m);
+  font-weight: var(--weight-normal);
+  line-height: 1.25;
+}
+
+b,
+strong,
+h3,
+h4,
+h5,
+h6,
+.bold {
+  font-weight: 700;
+}
+h1,
+h2,
+.text-accent,
+.text-3xl {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 800;
+}
+
+.text-3xl {
+  font-size: var(--text-3xl);
+  letter-spacing: var(--tracking-tight);
+  line-height: 0.9;
+}
+h1,
+.text-xxl {
+  font-size: var(--text-xxl);
+  letter-spacing: var(--tracking-tight);
+  line-height: 1;
+}
+h2,
+.text-xl {
+  font-size: var(--text-xl);
+  letter-spacing: var(--tracking-tight);
+  line-height: 1;
+}
+h3,
+.text-l {
+  font-size: var(--text-l);
+  line-height: 1.15;
+}
+h4,
+.text-m {
+  font-size: var(--text-m);
+}
+h5,
+.text-s {
+  font-size: var(--text-s);
+}
+h6,
+.text-xs {
+  font-size: var(--text-xs);
+}
+.text-xxs {
+  font-size: var(--text-xxs);
+}
+
+.text-center {
+  text-align: center;
+}
