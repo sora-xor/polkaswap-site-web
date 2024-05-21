@@ -83,6 +83,12 @@
   justify-content: center;
 }
 
+/* RADIUS */
+
+.rounded {
+  border-radius: 100rem;
+}
+
 /* OTHER */
 
 .break-word {

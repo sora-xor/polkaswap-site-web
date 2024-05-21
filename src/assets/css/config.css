@@ -42,6 +42,16 @@
   --color-purple03: #481261;
   --color-dark: #220044;
 
+  /* Effects */
+
+  --shadow-convex: 0.5rem 0.5rem 0.8rem 0rem rgba(255, 255, 255, 0.8) inset,
+    -0.5rem -0.5rem 0.8rem 0rem rgba(255, 255, 255, 0.8),
+    -0.5rem -0.5rem 0.8rem 0rem rgba(217, 210, 213, 0.5) inset,
+    0.5rem 0.5rem 0.8rem 0rem rgba(217, 210, 213, 0.5);
+  --shadow-concave: 0.5rem 0.5rem 0.8rem 0rem rgba(217, 210, 213, 0.3) inset,
+    -0.5rem -0.5rem 0.8rem 0rem rgba(217, 210, 213, 0.3), -0.5rem -0.5rem 0.7rem 0rem #fff inset,
+    0.5rem 0.5rem 0.7rem 0rem #fff;
+
   /* Other */
 
   --ease: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -83,7 +93,7 @@ html {
     font-size: 10px;
   }
 }
-@media (min-width: 420px) {
+@media (min-width: 460px) {
   html {
     font-size: 11px;
   }
