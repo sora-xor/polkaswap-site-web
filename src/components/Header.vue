@@ -1,9 +1,13 @@
 <script setup lang="ts">
 const isOpen = ref(false)
+
+const close = () => {
+  isOpen.value = false
+}
 </script>
 
 <template>
-  <header class="header" :class="{ open: isOpen }">
+  <header class="header" :class="{ open: isOpen }" v-on-click-outside="close">
     <div class="level1">
       <div class="logo flex px-3xs">
         <NuxtLink to="/" class="flex">
