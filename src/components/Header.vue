@@ -28,6 +28,7 @@ const close = () => {
 
 <style scoped>
 .header {
+  z-index: 666;
   position: fixed;
   right: var(--size-s);
   width: calc(100% - var(--size-s) * 2);
