@@ -27,6 +27,9 @@
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .aic {
   align-items: center;
 }
@@ -35,4 +38,7 @@
 }
 .jcsb {
   justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
 }

@@ -1,4 +1,6 @@
-body {
+body,
+.theme-dark,
+.theme-light {
   background-color: var(--color-medium);
   color: var(--color-primary);
 }

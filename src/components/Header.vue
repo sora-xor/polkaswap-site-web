@@ -9,7 +9,7 @@ const close = () => {
 <template>
   <header class="header" :class="{ open: isOpen }" v-on-click-outside="close">
     <div class="level1">
-      <div class="logo flex px-3xs">
+      <div class="logo flex">
         <NuxtLink to="/" class="flex">
           <img src="/logo.svg" alt="Logo" />
           <span class="visually-hidden">Home page</span>
