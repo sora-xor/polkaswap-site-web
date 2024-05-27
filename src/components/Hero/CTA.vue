@@ -31,7 +31,7 @@ const { preload } = usePreload()
 }
 
 .slot {
-  border-radius: 4rem;
+  border-radius: 3.6rem;
   box-shadow: var(--shadow-slot);
 }
 

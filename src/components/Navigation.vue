@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import socials from '~/lib/socials'
+
 defineProps<{
   isOpen: boolean
 }>()
@@ -28,33 +30,6 @@ const anchors = [
   },
 ]
 
-const socials = [
-  {
-    title: "SORA Wiki",
-    href: 'https://wiki.sora.org/'
-  },
-  {
-    title: "Telegram",
-    href: 'https://t.me/polkaswap'
-  },
-  {
-    title: "X / Twitter",
-    href: 'https://twitter.com/polkaswap'
-  },
-  {
-    title: "Reddit",
-    href: 'https://www.reddit.com/r/Polkaswap'
-  },
-  {
-    title: "Medium",
-    href: 'https://medium.com/polkaswap'
-  },
-  {
-    title: "GitHub",
-    href: 'https://github.com/sora-xor'
-  },
-]
-
 const transitionDelay = 0.05
 </script>
 
@@ -71,7 +46,10 @@ const transitionDelay = 0.05
           </li>
         </ul>
         <ul>
-          <li v-for="(social, i) in socials" :key="social.title">
+          <li v-for="(social, i) in [{
+    title: 'SORA Wiki',
+    href: 'https://wiki.sora.org/',
+  }, ...socials]" :key="social.title">
             <a :href="social.href" class="text-xs bold hover-trigger py-4xs flex aic" target="_blank"
               :style="`--delay: ${(i + 2) * transitionDelay}s`">
               <span class="hover-underline">{{ social.title }}</span>
