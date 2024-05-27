@@ -1,0 +1,38 @@
+/* POSITION */
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.sticky {
+  position: sticky;
+}
+.fixed {
+  position: fixed;
+}
+
+/* DISPLAY */
+
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.aic {
+  align-items: center;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}

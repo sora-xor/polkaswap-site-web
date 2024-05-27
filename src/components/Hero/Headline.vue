@@ -15,10 +15,12 @@ onMounted(() => {
 onBeforeUnmount(() => {
   clearInterval(interval)
 })
+
+const { preload } = usePreload()
 </script>
 
 <template>
-  <h1 class="text-center text-3xl title mt-s" :class="{ preload: rotation < 0 }">
+  <h1 class="text-center text-3xl title mt-s" :class="{ preload }">
     <div class="rotor" :style="`--rotation: ${rotation}deg`">
       <span v-for="word in words">
         {{ word }}

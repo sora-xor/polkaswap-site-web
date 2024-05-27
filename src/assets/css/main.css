@@ -1,9 +1,11 @@
 @import 'reset';
 @import 'config';
 @import 'common';
+@import 'layout';
 @import 'typography';
 @import 'margins';
 @import 'paddings';
+@import 'gaps';
 @import 'colors';
 
 html {

@@ -1,6 +1,7 @@
 <template>
-  <section class="text-center py-3xl color-semi hero">
+  <section class="py-3xl color-semi hero">
     <HeroHeadline />
+    <HeroCTA />
   </section>
 </template>
 

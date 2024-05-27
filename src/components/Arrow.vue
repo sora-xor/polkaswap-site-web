@@ -34,8 +34,8 @@ const { direction } = defineProps<{ direction?: 'top' | 'top-right' | 'right' | 
   left: 0;
   right: 0;
   bottom: 0;
-  transform: translate3d(-120%, 120%, 0);
-  transition: transform 0.45s ease;
+  transform: translate3d(-100%, 100%, 0);
+  transition: transform 0.5s cubic-bezier(0.5, 0, 0.25, 1);
 }
 
 .arrow-component .after {
@@ -47,7 +47,7 @@ const { direction } = defineProps<{ direction?: 'top' | 'top-right' | 'right' | 
 }
 
 .hover-trigger:focus .arrow-component .after {
-  transform: translate3d(120%, -120%, 0);
+  transform: translate3d(100%, -100%, 0);
 }
 
 @media (hover: hover) {
@@ -56,7 +56,7 @@ const { direction } = defineProps<{ direction?: 'top' | 'top-right' | 'right' | 
   }
 
   .hover-trigger:hover .arrow-component .after {
-    transform: translate3d(120%, -120%, 0);
+    transform: translate3d(100%, -100%, 0);
   }
 }
 

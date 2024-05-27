@@ -42,6 +42,14 @@
   --color-purple03: #481261;
   --color-dark: #220044;
 
+  --color-primary: var(--color-dark);
+  --color-secondary: var(--color-grey);
+  --color-semi: var(--color-purple02);
+  --color-low: var(--color-pinkish01);
+  --color-medium: var(--color-pinkish02);
+  --color-high: var(--color-pinkish03);
+  --color-accent: var(--color-pink);
+
   /* Effects */
 
   --shadow-convex: 0.5rem 0.5rem 0.8rem 0rem rgba(255, 255, 255, 0.8) inset,
@@ -51,6 +59,12 @@
   --shadow-concave: 0.5rem 0.5rem 0.8rem 0rem rgba(217, 210, 213, 0.3) inset,
     -0.5rem -0.5rem 0.8rem 0rem rgba(217, 210, 213, 0.3), -0.5rem -0.5rem 0.7rem 0rem #fff inset,
     0.5rem 0.5rem 0.7rem 0rem #fff;
+  --shadow-button: -5px -5px 10px 0px rgba(255, 255, 255, 0.75), 1px 1px 10px 0px rgba(0, 0, 0, 0.1),
+    1px 1px 2px 0px rgba(255, 255, 255, 0.8) inset;
+  --shadow-button-hover: -3px -3px 6px 0px rgba(255, 255, 255, 0.75),
+    1px 1px 6px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px 0px rgba(255, 255, 255, 0.8) inset;
+  --shadow-slot: -5px -5px 5px 0px rgba(255, 255, 255, 0.66) inset,
+    1px 1px 10px 0px rgba(0, 0, 0, 0.07) inset;
 
   /* Other */
 
@@ -83,6 +97,36 @@
     --text-xxl: 6.4rem;
     --text-3xl: 24rem;
   }
+}
+
+.theme-dark {
+  /* Colors */
+
+  --color-primary: var(--color-light);
+  --color-semi: var(--color-pinkish02);
+  --color-low: var(--color-purple03);
+  --color-medium: var(--color-purple02);
+  --color-high: var(--color-purple01);
+}
+
+.theme-accent {
+  /* Colors */
+
+  --color-primary: var(--color-light);
+  --color-secondary: var(--color-light);
+  --color-semi: var(--color-pinkish02);
+  --color-low: var(--color-pink);
+  --color-medium: var(--color-pink);
+  --color-high: var(--color-pink);
+
+  /* Effects */
+  --shadow-convex: 5px 5px 8px 0px rgba(255, 255, 255, 0.2) inset,
+    -5px -5px 8px 0px rgba(255, 255, 255, 0.2), -5px -5px 7px 0px rgba(186, 0, 45, 0.4) inset,
+    5px 5px 7px 0px rgba(186, 0, 45, 0.4);
+  --shadow-button: 1px 1px 2px 0px rgba(255, 255, 255, 0.1) inset,
+    -5px -5px 10px 0px rgba(255, 255, 255, 0.06), 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  --shadow-button-hover: 1px 1px 2px 0px rgba(255, 255, 255, 0.1) inset,
+    -3px -3px 6px 0px rgba(255, 255, 255, 0.06), 1px 1px 6px 0px rgba(0, 0, 0, 0.4);
 }
 
 html {

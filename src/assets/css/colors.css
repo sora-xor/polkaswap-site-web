@@ -1,57 +1,25 @@
-body,
-.theme-light {
-  background-color: var(--color-pinkish02);
-  color: var(--color-dark);
+body {
+  background-color: var(--color-medium);
+  color: var(--color-primary);
 }
 
-.bg-low,
-.theme-light .bg-low,
-.theme-light.bg-low {
-  background-color: var(--color-pinkish01);
+.bg-low {
+  background-color: var(--color-low);
 }
-.bg-medium,
-.theme-light .bg-medium,
-.theme-light.bg-medium {
-  background-color: var(--color-pinkish02);
+.bg-medium {
+  background-color: var(--color-medium);
 }
-.bg-high,
-.theme-light .bg-high,
-.theme-light.bg-high {
-  background-color: var(--color-pinkish03);
+.bg-high {
+  background-color: var(--color-high);
 }
 
 .color-accent {
-  color: var(--color-pink);
+  color: var(--color-accent);
 }
 .color-secondary {
-  color: var(--color-grey);
+  color: var(--color-secondary);
 }
 
-.color-semi,
-.theme-light .color-semi,
-.theme-light.color-semi {
-  color: var(--color-purple02);
-}
-
-.theme-dark {
-  background-color: var(--color-purple02);
-  color: var(--color-light);
-}
-
-.theme-dark .bg-low,
-.theme-dark.bg-low {
-  background-color: var(--color-purple03);
-}
-.theme-dark .bg-medium,
-.theme-dark.bg-medium {
-  background-color: var(--color-purple02);
-}
-.theme-dark .bg-high,
-.theme-dark.bg-high {
-  background-color: var(--color-purple01);
-}
-
-.theme-light .color-semi,
-.theme-light.color-semi {
-  color: var(--color-pinkish02);
+.color-semi {
+  color: var(--color-semi);
 }
