@@ -27,6 +27,9 @@
 .flex {
   display: flex;
 }
+.fdc {
+  flex-direction: column;
+}
 .grid {
   display: grid;
 }

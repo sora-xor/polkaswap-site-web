@@ -109,6 +109,12 @@
   --color-low: var(--color-purple03);
   --color-medium: var(--color-purple02);
   --color-high: var(--color-purple01);
+
+  /* Effects */
+
+  --shadow-convex: 5px 5px 8px 0px rgba(255, 255, 255, 0.06) inset,
+    -5px -5px 8px 0px rgba(48, 0, 69, 0.4) inset, -5px -5px 8px 0px rgba(255, 255, 255, 0.06),
+    5px 5px 8px 0px rgba(48, 0, 69, 0.4);
 }
 
 .theme-accent {
