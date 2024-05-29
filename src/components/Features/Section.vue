@@ -73,7 +73,7 @@ const { preload } = usePreload()
 
 <template>
   <section class="features" :class="{ preload }" ref="trigger">
-    <div class="visual mx-auto">
+    <div class="visual">
       <div class="image">
         <img v-for="item, i in items" :src="`/features/${item.visual}.jpg`" alt="Swap Screenshot"
           :style="i ? 'position: absolute' : ''" />
@@ -97,10 +97,22 @@ const { preload } = usePreload()
 
 .visual {
   position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual::before {
+  content: '';
+  display: block;
+  position: absolute;
   top: var(--size-4xs);
-  height: calc(100vh - 2 * var(--size-4xs));
-  width: calc(100vw - 2 * var(--size-4xs));
-  padding: var(--size-xl);
+  right: var(--size-4xs);
+  bottom: var(--size-4xs);
+  left: var(--size-4xs);
   border-radius: var(--size-m);
   z-index: -1;
   background-color: var(--color-low);
@@ -124,19 +136,6 @@ const { preload } = usePreload()
     50vmax 50vmax;
   background-repeat: no-repeat;
   animation: 5s movement linear infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.visual::after {
-  content: '';
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 .image {
@@ -224,7 +223,7 @@ const { preload } = usePreload()
 
 @media (max-width: 799px) {
   .visual {
-    padding: var(--size-xxs);
+    padding: var(--size-s);
   }
 
   .image {

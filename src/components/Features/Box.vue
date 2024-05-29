@@ -24,9 +24,9 @@ defineProps<{
   border-radius: var(--size-s);
   min-height: 30rem;
   position: absolute;
-  bottom: var(--size-xxs);
-  right: var(--size-xxs);
-  left: var(--size-xxs);
+  bottom: var(--size-s);
+  right: var(--size-s);
+  left: var(--size-s);
 }
 
 .icon {
