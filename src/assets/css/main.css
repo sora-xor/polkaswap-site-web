@@ -30,3 +30,7 @@ hr {
   height: 0.8rem;
   border-radius: 1rem;
 }
+
+.smt {
+  scroll-margin-top: var(--size-xxl);
+}

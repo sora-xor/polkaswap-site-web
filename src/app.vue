@@ -2,9 +2,9 @@
   <Header />
   <HeroSection />
   <FeaturesSection id="features" />
-  <WhySection id="why" />
+  <WhySection id="why" class="smt" />
   <hr>
-  <AppsSection id="apps" />
+  <AppsSection id="apps" class="smt" />
   <SocialSection />
   <Footer />
 </template>
