@@ -22,7 +22,7 @@ const items = [{
 
 <template>
   <section class="why-section grid gap-m my-3xl px-s mx-auto">
-    <h2 class="text-xxl color-semi">Why Polkaswap<br>?</h2>
+    <h2 class="text-xxl color-semi"><span class="color-accent">Why</span> Polkaswap<br>?</h2>
     <Accordion :items="items" />
   </section>
 </template>
