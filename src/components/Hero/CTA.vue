@@ -3,7 +3,7 @@ const { preload } = usePreload()
 </script>
 
 <template>
-  <div class="hero-cta px-s mx-auto my-l" :class="{ preload }">
+  <div class="hero-cta px-s mx-auto mt-l" :class="{ preload }">
     <div class="text color-secondary">
       Experience the future of DeFi on Polkaswap — your gateway to interoperable, fast, and secure crypto trading.
     </div>
