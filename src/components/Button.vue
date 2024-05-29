@@ -12,7 +12,8 @@ const component = computed(() => {
 </script>
 
 <template>
-  <component :to="to" :target="target" class="button flex aic jcsb text-xs bold color-secondary bg-high hover-trigger"
+  <component :is="component" :to="to" :target="target"
+    class="button flex gap-4xs aic jcsb text-xs bold color-secondary bg-high hover-trigger"
     :class="{ 'theme-accent': accent }">
     <slot />
     <Cap>
