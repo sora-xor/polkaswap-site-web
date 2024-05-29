@@ -74,6 +74,7 @@ const { preload } = usePreload()
 <template>
   <section class="features" :class="{ preload }" ref="trigger">
     <div class="visual">
+      <DynamicBackground class="bg" />
       <div class="image">
         <img v-for="item, i in items" :src="`/features/${item.visual}.jpg`" alt="Swap Screenshot"
           :style="i ? 'position: absolute' : ''" />
@@ -105,45 +106,20 @@ const { preload } = usePreload()
   justify-content: center;
 }
 
-.visual::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: var(--size-4xs);
-  right: var(--size-4xs);
-  bottom: var(--size-4xs);
-  left: var(--size-4xs);
+.bg {
+  top: var(--size-4xs) !important;
+  right: var(--size-4xs) !important;
+  bottom: var(--size-4xs) !important;
+  left: var(--size-4xs) !important;
   border-radius: var(--size-m);
-  z-index: -1;
-  background-color: var(--color-low);
-  background-image:
-    radial-gradient(closest-side, rgba(235, 105, 78, 1), rgba(235, 105, 78, 0)),
-    radial-gradient(closest-side, rgba(243, 11, 164, .3), rgba(243, 11, 164, 0)),
-    radial-gradient(closest-side, rgba(254, 234, 131, .7), rgba(254, 234, 131, 0)),
-    radial-gradient(closest-side, rgb(161, 209, 255), rgba(170, 142, 245, 0)),
-    radial-gradient(closest-side, rgba(248, 192, 147, 1), rgba(248, 192, 147, 0));
-  background-size:
-    130vmax 130vmax,
-    80vmax 80vmax,
-    90vmax 90vmax,
-    110vmax 110vmax,
-    90vmax 90vmax;
-  background-position:
-    -80vmax -80vmax,
-    60vmax -30vmax,
-    10vmax 10vmax,
-    -30vmax -10vmax,
-    50vmax 50vmax;
-  background-repeat: no-repeat;
-  animation: 5s movement linear infinite;
 }
 
 .image {
-  border-radius: 1vw;
+  border-radius: 0.8vw;
   aspect-ratio: 2560/1782;
   max-width: 100%;
   max-height: 100%;
-  box-shadow: 0px 40px 70px -20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 20px 70px -20px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   position: relative;
 }
@@ -155,70 +131,6 @@ const { preload } = usePreload()
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-@keyframes movement {
-
-  0%,
-  100% {
-    background-size:
-      130vmax 130vmax,
-      80vmax 80vmax,
-      90vmax 90vmax,
-      110vmax 110vmax,
-      90vmax 90vmax;
-    background-position:
-      -80vmax -80vmax,
-      60vmax -30vmax,
-      10vmax 10vmax,
-      -30vmax -10vmax,
-      50vmax 50vmax;
-  }
-
-  25% {
-    background-size:
-      100vmax 100vmax,
-      90vmax 90vmax,
-      100vmax 100vmax,
-      90vmax 90vmax,
-      60vmax 60vmax;
-    background-position:
-      -60vmax -90vmax,
-      50vmax -40vmax,
-      0vmax -20vmax,
-      -40vmax -20vmax,
-      40vmax 60vmax;
-  }
-
-  50% {
-    background-size:
-      80vmax 80vmax,
-      110vmax 110vmax,
-      80vmax 80vmax,
-      60vmax 60vmax,
-      80vmax 80vmax;
-    background-position:
-      -50vmax -70vmax,
-      40vmax -30vmax,
-      10vmax 0vmax,
-      20vmax 10vmax,
-      30vmax 70vmax;
-  }
-
-  75% {
-    background-size:
-      90vmax 90vmax,
-      90vmax 90vmax,
-      100vmax 100vmax,
-      90vmax 90vmax,
-      70vmax 70vmax;
-    background-position:
-      -50vmax -40vmax,
-      50vmax -30vmax,
-      20vmax 0vmax,
-      -10vmax 10vmax,
-      40vmax 60vmax;
-  }
 }
 
 @media (max-width: 799px) {

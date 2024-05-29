@@ -2,11 +2,11 @@
 const items = [{
   title: 'SORA Wallet',
   href: 'https://sora.org/wallet',
-  image: { src: '/apps/sora-wallet.jpg', alt: 'SORA Wallet mobile app' }
+  image: { src: '/apps/sora-wallet.webp', alt: 'SORA Wallet mobile app' }
 }, {
   title: 'Fearless Wallet',
   href: 'https://fearlesswallet.io',
-  image: { src: '/apps/fearless-wallet.jpg', alt: 'Fearless Wallet mobile app' }
+  image: { src: '/apps/fearless-wallet.webp', alt: 'Fearless Wallet mobile app' }
 }]
 </script>
 

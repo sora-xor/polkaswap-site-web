@@ -13,6 +13,7 @@ const { title, href, image } = defineProps<{
 <template>
   <NuxtLink :to="href" class="tile hover-trigger" :target="target">
     <div class="image">
+      <DynamicBackground />
       <img v-bind="image">
     </div>
     <div class="notch">
