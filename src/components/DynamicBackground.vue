@@ -1,6 +1,12 @@
+<script setup lang="ts">
+const style = ref<string>('')
+onMounted(() => {
+  style.value = `animation-delay: ${-8 * Math.random()}s; animation-duration: ${5 + Math.random() * 3}s`
+})
+</script>
+
 <template>
-  <div class="dynamic-background"
-    :style="`animation-delay: ${-8 * Math.random()}s; animation-duration: ${5 + Math.random() * 3}s`"></div>
+  <div class="dynamic-background" :style="style"></div>
 </template>
 
 <style scoped>
