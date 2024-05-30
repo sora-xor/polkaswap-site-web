@@ -115,6 +115,8 @@
   --shadow-convex: 5px 5px 8px 0px rgba(255, 255, 255, 0.06) inset,
     -5px -5px 8px 0px rgba(48, 0, 69, 0.4) inset, -5px -5px 8px 0px rgba(255, 255, 255, 0.06),
     5px 5px 8px 0px rgba(48, 0, 69, 0.4);
+  --shadow-slot: -5px -5px 5px 0px rgba(255, 255, 255, 0.06) inset,
+    1px 1px 10px 0px rgba(0, 0, 0, 0.13) inset;
 }
 
 .theme-accent {

@@ -3,7 +3,7 @@ import socials from '~/lib/socials'
 </script>
 
 <template>
-  <section class="px-s my-3xl">
+  <section class="px-s mb-3xl">
     <h2 class="title text-xxl color-semi text-center mx-auto mb-l">
       Join our global community
     </h2>
