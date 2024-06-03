@@ -1,0 +1,70 @@
+/* HOVER no-underline → underline */
+
+.hover-underline {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size 0.45s var(--ease);
+}
+
+.hover-underline:focus,
+.hover-trigger:focus .hover-underline,
+.hover-trigger.router-link-active .hover-underline {
+  background-size: 100% 1px;
+}
+
+@media (hover: hover) {
+  .hover-underline:hover,
+  .hover-trigger:hover .hover-underline {
+    background-size: 100% 1px;
+    background-position: 0% 100%;
+  }
+}
+
+/* HOVER underline → no-underline */
+
+.hover-deunderline {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  transition: background-size 0.45s var(--ease);
+}
+
+.hover-deunderline:focus,
+.hover-trigger:focus .hover-deunderline {
+  background-size: 100% 1px;
+}
+
+@media (hover: hover) {
+  .hover-deunderline:hover,
+  .hover-trigger:hover .hover-deunderline {
+    background-size: 0% 1px;
+    background-position: 100% 100%;
+  }
+}
+
+/* RADIUS */
+
+.rounded {
+  border-radius: 100rem;
+}
+
+/* OTHER */
+
+.break-word {
+  word-break: break-word;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

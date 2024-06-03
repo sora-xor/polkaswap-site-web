@@ -1,0 +1,44 @@
+/* Gap Classnames */
+.gap-5xs {
+  gap: var(--size-5xs);
+}
+
+.gap-4xs {
+  gap: var(--size-4xs);
+}
+
+.gap-3xs {
+  gap: var(--size-3xs);
+}
+
+.gap-2xs {
+  gap: var(--size-2xs);
+}
+
+.gap-xs {
+  gap: var(--size-xs);
+}
+
+.gap-s {
+  gap: var(--size-s);
+}
+
+.gap-m {
+  gap: var(--size-m);
+}
+
+.gap-l {
+  gap: var(--size-l);
+}
+
+.gap-xl {
+  gap: var(--size-xl);
+}
+
+.gap-2xl {
+  gap: var(--size-2xl);
+}
+
+.gap-3xl {
+  gap: var(--size-3xl);
+}

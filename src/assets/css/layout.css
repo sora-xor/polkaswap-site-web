@@ -1,0 +1,47 @@
+/* POSITION */
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.sticky {
+  position: sticky;
+}
+.fixed {
+  position: fixed;
+}
+
+/* DISPLAY */
+
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.fdc {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+.aic {
+  align-items: center;
+}
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.wrap {
+  flex-wrap: wrap;
+}

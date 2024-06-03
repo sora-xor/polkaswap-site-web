@@ -1,0 +1,27 @@
+body,
+.theme-dark,
+.theme-light {
+  background-color: var(--color-medium);
+  color: var(--color-primary);
+}
+
+.bg-low {
+  background-color: var(--color-low);
+}
+.bg-medium {
+  background-color: var(--color-medium);
+}
+.bg-high {
+  background-color: var(--color-high);
+}
+
+.color-accent {
+  color: var(--color-accent);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-semi {
+  color: var(--color-semi);
+}
