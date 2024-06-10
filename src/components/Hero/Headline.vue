@@ -22,9 +22,9 @@ const { preload } = usePreload()
 <template>
   <h1 class="text-center text-3xl title mt-s" :class="{ preload }">
     <div class="rotor" :style="`--rotation: ${rotation}deg`">
-      <span v-for="word in words">
+      <span v-for="word, i in words">
         {{ word }}
-        <HeroCoins />
+        <HeroCoins :i="i" />
       </span>
     </div>
     <div class="subline">with Style and Freedom</div>
