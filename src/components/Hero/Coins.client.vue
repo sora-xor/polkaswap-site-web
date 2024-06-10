@@ -1,6 +1,26 @@
 <script setup lang="ts">
 const random = (range: number = 1) => (Math.random() - 0.5) * range
-const tokens = ['XOR', 'NOIR', 'XSTXAU', 'XSTXAG', 'PSWAP', 'VAL', 'KEURO'].sort(() => random())
+const tokens = [
+  'XOR',
+  'VAL',
+  'PSWAP',
+  'KEN',
+  'KUSD',
+  'ETH',
+  'DAI',
+  'DOT',
+
+  'LLD',
+  'KSM',
+  'ACA',
+  'ASTR',
+  'CERES',
+  'DEO',
+  'HMX',
+  'APOLLO',
+  'SOSHIBA',
+  'NOIR',
+].sort(() => random()).slice(0, 7)
 const x = [-2, -1.26, -.55, .2, .7, 1.4, 2]
 const y = [-.1, .14, -.3, .38, -.45, .15, -.2]
 const z = [.4, .05, - .1, .2, .45, .15, .1].sort(() => random())
