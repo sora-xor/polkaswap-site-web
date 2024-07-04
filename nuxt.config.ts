@@ -9,9 +9,12 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
+  modules: ['@nuxt/image'],
+
   build: {
     transpile: ['gsap'],
   },
+
   app: {
     head: {
       htmlAttrs: {
@@ -108,4 +111,6 @@ export default defineNuxtConfig({
       ],
     },
   },
+
+  compatibilityDate: '2024-07-04',
 })
