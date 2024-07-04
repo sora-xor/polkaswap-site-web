@@ -58,7 +58,7 @@ const transitionDelay = 0.05
           </li>
         </ul>
         <div class="app flex jcc">
-          <a href="https://polkaswap.io" class="text-xs bold py-3xs px-xxs rounded flex" target="_blank">
+          <a href="https://polkaswap.io" class="text-xs bold py-3xs px-xxs rounded-m flex" target="_blank">
             Launch App
           </a>
         </div>

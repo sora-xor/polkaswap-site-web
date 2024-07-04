@@ -19,7 +19,7 @@ const toggleAccordion = (i: number) => {
 
 <template>
   <div class="slot p-xs bg-low grid gap-3xs">
-    <div v-for="(item, i) in items" :key="i" class="item bg-high button rounded-s" :class="{ open: i === activeItem }">
+    <div v-for="(item, i) in items" :key="i" class="item bg-high button" :class="{ open: i === activeItem }">
       <h3 class="text-m pl-xs pr-xxs py-xxs" @click="toggleAccordion(i)">
         <span>
           {{ item.title }}

@@ -1,0 +1,6 @@
+.rounded-m {
+  border-radius: var(--size-m);
+}
+.rounded-l {
+  border-radius: var(--size-l);
+}

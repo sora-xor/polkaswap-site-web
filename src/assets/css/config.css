@@ -49,6 +49,7 @@
   --color-low: var(--color-pinkish01);
   --color-medium: var(--color-pinkish02);
   --color-high: var(--color-pinkish03);
+  --color-highest: var(--color-light);
   --color-accent: var(--color-pink);
 
   /* Effects */
@@ -109,6 +110,7 @@
   --color-low: var(--color-purple03);
   --color-medium: var(--color-purple02);
   --color-high: var(--color-purple01);
+  --color-highest: var(--color-purple01);
 
   /* Effects */
 

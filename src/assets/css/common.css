@@ -47,12 +47,6 @@
   }
 }
 
-/* RADIUS */
-
-.rounded {
-  border-radius: 100rem;
-}
-
 /* OTHER */
 
 .break-word {
@@ -67,4 +61,10 @@
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* CONTAINERS */
+
+.w {
+  max-width: 130rem;
 }

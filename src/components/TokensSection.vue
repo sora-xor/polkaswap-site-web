@@ -21,7 +21,7 @@ const progress = ref(0)
         PSWAP tokens are reminted to allocate to liquidity providers, but with time, this percentage will decrease to
         35% after 4 years.
       </p>
-      <div class="text-xs mx-auto color-secondary bold slot rounded flex gap-s bg-low aic py-3xs pl-s pr-3xs">
+      <div class="text-xs mx-auto color-secondary bold slot rounded-l flex gap-s bg-low aic py-3xs pl-s pr-3xs">
         Learn more at <Button to="https://wiki.sora.org/pswap.html" target="_blank" accent>SORA Wiki</Button>
       </div>
       <h3 class="mb-m mt-3xl smt" id="sora">
@@ -34,7 +34,7 @@ const progress = ref(0)
         Token Bonding Curve providing reserve assets), and soon Aggregate Liquidity Technology (stay tuned for more
         news).
       </p>
-      <div class="text-xs mx-auto color-secondary bold slot rounded flex gap-s bg-low aic py-3xs pl-s pr-3xs">
+      <div class="text-xs mx-auto color-secondary bold slot rounded-l flex gap-s bg-low aic py-3xs pl-s pr-3xs">
         Learn more at <Button to="https://sora.org" target="_blank" accent>SORA.org</Button>
       </div>
     </div>

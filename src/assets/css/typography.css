@@ -16,10 +16,12 @@ h6,
 .bold {
   font-weight: 700;
 }
-h1,
-h2,
+h1:not([class*='text']),
+h2:not([class*='text']),
 .text-accent,
-.text-3xl {
+.text-3xl,
+.text-xxl,
+.text-xl {
   font-family: 'Unbounded', sans-serif;
   font-weight: 800;
 }
