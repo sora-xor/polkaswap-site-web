@@ -7,7 +7,7 @@ const progress = ref(0)
     <div class="bg" :style="`--progress: ${progress}`"></div>
     <TokenScreen title="PSWAP" image="/tokens/PSWAP.svg" subline="Token" @progress="(p) => { progress = p }" light
       id="pswap" />
-    <div class="w px-m mx-auto theme-dark">
+    <div class="w-narrow rounded-l px-m mx-auto theme-dark">
       <h3 class="mb-m">
         <span class="color-accent">PSWAP</span> is a utility and governance token used to reward liquidity providers on
         Polkaswap created by SORA community governance.
@@ -63,11 +63,6 @@ const progress = ref(0)
   height: max(145vw, 145vh);
   border-radius: 50%;
   transform: translate(50%, -50%) scale(var(--progress));
-}
-
-.w {
-  max-width: 72rem;
-  border-radius: var(--size-m);
 }
 
 .slot {

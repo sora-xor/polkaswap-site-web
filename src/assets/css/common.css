@@ -68,3 +68,7 @@
 .w {
   max-width: 130rem;
 }
+
+.w-narrow {
+  max-width: 72rem;
+}
