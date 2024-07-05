@@ -1,10 +1,24 @@
 <script setup lang="ts">
+const { i = 0 } = defineProps<{ i: number }>()
+
 const random = (range: number = 1) => (Math.random() - 0.5) * range
-const tokens = ['XOR', 'NOIR', 'XSTXAU', 'XSTXAG', 'PSWAP', 'VAL', 'KEURO'].sort(() => random())
+
+const tokens = [
+  ['XOR', 'KUSD', 'LLD', 'KSM', 'SOSHIBA', 'CERES', 'PSWAP',],
+  ['VAL', 'ETH', 'ACA', 'ASTR', 'NOIR', 'KEN', 'APOLLO'],
+  ['PSWAP', 'DAI', 'CERES', 'DEO', 'XOR', 'KSM', 'ETH'],
+  ['KEN', 'DOT', 'HMX', 'APOLLO', 'VAL', 'ETH', 'SOSHIBA'],
+]
+
 const x = [-2, -1.26, -.55, .2, .7, 1.4, 2]
 const y = [-.1, .14, -.3, .38, -.45, .15, -.2]
-const z = [.4, .05, - .1, .2, .45, .15, .1].sort(() => random())
-const coins = tokens.map((name, i) => ({ name, x: x[i] + random(0.2), y: y[i] + random(0.2), z: z[i] }))
+const z = [.45, .4, .2, .15, .1, .05, -.1]
+
+const coins = computed(() => tokens[i % tokens.length]
+  .map((name, j) => ({ name, z: z[j] }))
+  .sort(() => random())
+  .map((el, j) => ({ ...el, x: x[j] + random(0.2), y: y[j] + random(0.2) }))
+)
 </script>
 
 <template>
