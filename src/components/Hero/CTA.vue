@@ -22,7 +22,7 @@ const { preload } = usePreload()
 <style scoped>
 .hero-cta {
   max-width: 110rem;
-  transition: transform .7s 1.5s ease, opacity .7s 1.5s ease;
+  transition: transform .7s 0.5s ease, opacity .7s 0.5s ease;
 }
 
 .hero-cta.preload {

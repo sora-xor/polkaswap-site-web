@@ -46,7 +46,7 @@ const { preload } = usePreload()
   height: 1.25em;
   transform-style: preserve-3d;
   transform: rotateX(var(--rotation, -360deg));
-  transition: transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 1s cubic-bezier(0, 0, 0.175, 1);
 }
 
 .rotor>span {
@@ -81,7 +81,7 @@ const { preload } = usePreload()
 .subline {
   font-size: 2.4rem;
   letter-spacing: var(--tracking-tight);
-  transition: transform .7s 1.3s ease, opacity .7s 1.3s ease;
+  transition: transform .7s 0.3s ease, opacity .7s 0.3s ease;
 }
 
 .title.preload .subline {

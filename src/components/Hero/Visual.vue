@@ -32,7 +32,7 @@ const { preload } = usePreload()
   margin-bottom: -1px;
   z-index: 1;
   aspect-ratio: 1334/827;
-  transition: transform .7s 1.7s ease, opacity .7s 1.7s ease;
+  transition: transform .7s 0.7s ease, opacity .7s 0.7s ease;
 }
 
 .image.preload {
