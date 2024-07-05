@@ -2,11 +2,15 @@
 const items = [{
   title: 'SORA Wallet',
   href: 'https://sora.org/wallet',
-  image: { src: '/apps/sora-wallet.webp', alt: 'SORA Wallet mobile app' }
+  image: { src: '/apps/sora-wallet.jpg', alt: 'SORA Wallet mobile app' }
 }, {
   title: 'Fearless Wallet',
   href: 'https://fearlesswallet.io',
-  image: { src: '/apps/fearless-wallet.webp', alt: 'Fearless Wallet mobile app' }
+  image: { src: '/apps/fearless-wallet.jpg', alt: 'Fearless Wallet mobile app' }
+}, {
+  title: 'Telegram App',
+  href: 'https://t.me/PolkaswapDevBot/app',
+  image: { src: '/apps/telegram-app.jpg', alt: 'Polkaswap Telegram app' }
 }]
 </script>
 
@@ -28,7 +32,7 @@ const items = [{
 <style scoped>
 @media (min-width: 800px) {
   .tiles {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 </style>
