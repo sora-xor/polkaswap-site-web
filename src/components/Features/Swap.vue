@@ -4,7 +4,7 @@
     <p class="text-s color-secondary mb-m">
       Buy and sell tokens seamlessly. Polkaswap uses an advanced swap algorithm for the best price options*.
     </p>
-    <img src="/features/swap.png" alt="Swap UI" class="image">
+    <NuxtImg src="/features/swap.png" alt="Swap UI" class="image" loading="lazy" quality="75" sizes="600px md:900px" />
   </div>
 </template>
 
@@ -18,5 +18,6 @@
   max-height: 42rem;
   object-fit: contain;
   margin: 0 auto;
+  aspect-ratio: 462/490;
 }
 </style>

@@ -1,6 +1,11 @@
+<script setup lang="ts">
+const { preload } = usePreload()
+</script>
+
 <template>
   <div class="hero-visual rounded-l px-m pt-l">
-    <NuxtImg src="/hero.png" alt="Polkaswap app screenshot" class="mx-auto image" />
+    <NuxtImg src="/hero.png" alt="Polkaswap app screenshot" class="mx-auto image" :class="{ preload }" quality="75"
+      sizes="960px md:1920px" />
   </div>
 </template>
 
@@ -20,11 +25,18 @@
 
 .image {
   width: 100%;
-  max-width: 112rem;
+  max-width: 110rem;
   border-radius: min(1vw, 1.2rem) min(1vw, 1.2rem) 0 0;
   box-shadow: 0px 4rem 7rem -2rem rgba(0, 0, 0, 0.15);
   position: relative;
   margin-bottom: -1px;
   z-index: 1;
+  aspect-ratio: 1334/827;
+  transition: transform .7s 1.7s ease, opacity .7s 1.7s ease;
+}
+
+.image.preload {
+  transform: translateY(2rem);
+  opacity: 0;
 }
 </style>
