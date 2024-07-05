@@ -31,7 +31,7 @@ const { preload } = usePreload()
   </h1>
 </template>
 
-<style>
+<style scoped>
 .title {
   perspective: 200rem;
   transition: opacity 1s ease;
