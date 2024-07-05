@@ -5,7 +5,7 @@ const { preload } = usePreload()
 <template>
   <div class="hero-visual rounded-l px-m pt-l">
     <NuxtImg src="/hero.png" alt="Polkaswap app screenshot" class="mx-auto image" :class="{ preload }" quality="75"
-      sizes="960px md:1920px" />
+      sizes="100vw md:1100px" preload />
   </div>
 </template>
 
