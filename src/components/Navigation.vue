@@ -64,7 +64,7 @@ const transitionDelay = 0.05
         </div>
         <div class="logo px-l flex">
           <NuxtLink to="/" class="block" @click="$emit('navigate')">
-            <img src="/logo.svg" alt="Logo" />
+            <img src="/logo.svg" alt="Logo" width="240" height="70" />
             <span class="visually-hidden">Home page</span>
           </NuxtLink>
         </div>

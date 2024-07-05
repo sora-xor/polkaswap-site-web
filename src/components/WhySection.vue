@@ -33,7 +33,7 @@ const items = [{
     </h2>
     <div v-for="item in items" class="bg-low pt-s px-m pb-m rounded-m">
       <Cap class="mx-auto mb-xs">
-        <img :src="item.icon" alt="Icon" class="icon" loading="lazy">
+        <img :src="item.icon" alt="Icon" class="icon" loading="lazy" width="32" height="32">
       </Cap>
       <h3 class="text-m mb-xs">{{ item.title }}</h3>
       <p class="text-xs color-secondary">{{ item.content }}</p>
@@ -44,6 +44,7 @@ const items = [{
 <style scoped>
 .icon {
   width: 3.2rem;
+  height: 3.2rem;
 }
 
 @media (min-width: 480px) {

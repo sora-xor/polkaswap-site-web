@@ -6,8 +6,8 @@
       limit orders, and view real-time market depths and updates.
     </p>
     <div class="chart mb-l">
-      <img src="/features/trade1.svg" alt="Trading chart" loading="lazy" />
-      <img src="/features/trade1.svg" alt="Trading chart" loading="lazy" />
+      <img src="/features/trade1.svg" alt="Trading chart" loading="lazy" width="634" height="265" />
+      <img src="/features/trade1.svg" alt="Trading chart" loading="lazy" width="634" height="265" />
     </div>
   </div>
 </template>
@@ -31,7 +31,7 @@
   object-fit: contain;
   align-self: center;
   aspect-ratio: 634/265;
-
+  height: auto;
 }
 
 @keyframes slide {
