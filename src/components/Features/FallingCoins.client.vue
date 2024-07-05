@@ -3,12 +3,12 @@ import { Engine, Render, Runner, Bodies, Body, Composite, Composites, MouseConst
 
 const networks = [
   '/tokens/XOR.svg',
-  '/tokens/Polkadot.svg',
-  '/tokens/Kusama.svg',
-  '/tokens/astar.svg',
+  '/tokens/ETH.svg',
+  '/tokens/DOT.svg',
+  '/tokens/KSM.svg',
+  '/tokens/ASTR.svg',
   '/tokens/acala.svg',
   '/tokens/liberland.svg',
-  '/tokens/Ethereum.svg',
 ]
 
 const parent = shallowRef()
@@ -65,10 +65,10 @@ onMounted(async () => {
 
   // create chain icons
 
-  const elementSize = 30
+  const elementSize = 40
 
   const chains = Composites.stack(0, 0, networks.length, 1, 0, 0, function (x: number, y: number, i: number) {
-    const size = elementSize + (networks.length - i) * 9
+    const size = elementSize + (networks.length - i) * 6
     return Bodies.circle(Math.random() * width, Math.random() * height / 1.5, size, {
       density: 0.0006,
       frictionAir: 0.01,
