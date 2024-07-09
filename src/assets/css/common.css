@@ -10,8 +10,7 @@
 }
 
 .hover-underline:focus,
-.hover-trigger:focus .hover-underline,
-.hover-trigger.router-link-active .hover-underline {
+.hover-trigger:focus .hover-underline {
   background-size: 100% 1px;
 }
 
