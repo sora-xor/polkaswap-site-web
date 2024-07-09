@@ -10,23 +10,23 @@ defineEmits(['navigate'])
 const anchors = [
   {
     title: 'Features',
-    href: '#features'
+    href: '/#features'
   },
   {
     title: 'Why Polkaswap',
-    href: '#why'
+    href: '/#why'
   },
   {
     title: 'Mobile Apps',
-    href: '#apps'
+    href: '/#apps'
   },
   {
     title: 'PSWAP Token',
-    href: '#pswap'
+    href: '/#pswap'
   },
   {
     title: 'SORA Network',
-    href: '#sora'
+    href: '/#sora'
   },
 ]
 
@@ -39,10 +39,10 @@ const transitionDelay = 0.05
       <nav class="content pt-m px-xs pb-xs">
         <ul>
           <li v-for="(anchor, i) in anchors" :key="anchor.title">
-            <a :href="anchor.href" class="text-xs bold hover-trigger py-4xs flex"
+            <NuxtLink :to="anchor.href" class="text-xs bold hover-trigger py-4xs flex"
               :style="`--delay: ${i * transitionDelay}s`" @click="$emit('navigate')">
               <span class="hover-underline">{{ anchor.title }}</span>
-            </a>
+            </NuxtLink>
           </li>
         </ul>
         <ul>
@@ -58,13 +58,13 @@ const transitionDelay = 0.05
           </li>
         </ul>
         <div class="app flex jcc">
-          <a href="https://polkaswap.io" class="text-xs bold py-3xs px-xxs rounded flex" target="_blank">
+          <a href="https://polkaswap.io" class="text-xs bold py-3xs px-xxs rounded-m flex" target="_blank">
             Launch App
           </a>
         </div>
         <div class="logo px-l flex">
           <NuxtLink to="/" class="block" @click="$emit('navigate')">
-            <img src="/logo.svg" alt="Logo" />
+            <img src="/logo.svg" alt="Logo" width="240" height="70" />
             <span class="visually-hidden">Home page</span>
           </NuxtLink>
         </div>

@@ -6,6 +6,7 @@
 @import 'margins';
 @import 'paddings';
 @import 'gaps';
+@import 'rounded';
 @import 'colors';
 
 html {

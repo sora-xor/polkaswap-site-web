@@ -49,6 +49,7 @@
   --color-low: var(--color-pinkish01);
   --color-medium: var(--color-pinkish02);
   --color-high: var(--color-pinkish03);
+  --color-highest: var(--color-light);
   --color-accent: var(--color-pink);
 
   /* Effects */
@@ -64,8 +65,8 @@
     1px 1px 2px 0px rgba(255, 255, 255, 0.8) inset;
   --shadow-button-hover: -3px -3px 6px 0px rgba(255, 255, 255, 0.75),
     1px 1px 6px 0px rgba(0, 0, 0, 0.15), 1px 1px 2px 0px rgba(255, 255, 255, 0.8) inset;
-  --shadow-slot: -5px -5px 5px 0px rgba(255, 255, 255, 0.66) inset,
-    1px 1px 10px 0px rgba(0, 0, 0, 0.07) inset;
+  --shadow-slot: 10px 10px 70px 0px rgba(0, 0, 0, 0.04),
+    -5px -5px 10px 0px rgba(255, 255, 255, 0.85) inset, 1px 1px 10px 0px rgba(0, 0, 0, 0.09) inset;
 
   /* Other */
 
@@ -109,6 +110,7 @@
   --color-low: var(--color-purple03);
   --color-medium: var(--color-purple02);
   --color-high: var(--color-purple01);
+  --color-highest: var(--color-purple01);
 
   /* Effects */
 

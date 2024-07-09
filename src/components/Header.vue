@@ -11,7 +11,7 @@ const close = () => {
     <div class="level1">
       <div class="logo flex">
         <NuxtLink to="/" class="flex">
-          <img src="/logo.svg" alt="Logo" />
+          <img src="/logo.svg" alt="Logo" width="240" height="70" />
           <span class="visually-hidden">Home page</span>
         </NuxtLink>
       </div>
@@ -50,6 +50,7 @@ const close = () => {
 
 .logo img {
   height: 4.4rem;
+  width: auto;
   margin: 0.2rem 0;
 }
 

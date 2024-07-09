@@ -27,7 +27,7 @@ const legalLinks = [
     <div class="copy p-3xs">&copy; {{ new Date().getFullYear() }}, Polkaswap</div>
     <div class="logo">
       <NuxtLink to="/">
-        <img src="/logo-invert.svg" alt="Polkaswap Logo" />
+        <img src="/logo-invert.svg" alt="Polkaswap Logo" width="240" height="70" />
         <span class="visually-hidden">Home page</span>
       </NuxtLink>
     </div>
@@ -40,8 +40,9 @@ const legalLinks = [
   place-items: center;
 }
 
-.logo {
+.logo img {
   width: 26rem;
+  height: auto;
   aspect-ratio: 24/7;
 }
 
@@ -56,8 +57,11 @@ const legalLinks = [
   }
 
   .logo {
-    width: 44rem;
     grid-column-end: span 3;
+  }
+
+  .logo img {
+    width: 44rem;
   }
 
   .button {

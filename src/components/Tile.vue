@@ -13,8 +13,7 @@ const { title, href, image } = defineProps<{
 <template>
   <NuxtLink :to="href" class="tile hover-trigger" :target="target">
     <div class="image">
-      <DynamicBackground />
-      <img v-bind="image">
+      <NuxtImg v-bind="image" quality="75" sizes="100vw md:620px" loading="lazy" />
     </div>
     <div class="notch">
       <div class="inner">
@@ -82,12 +81,6 @@ const { title, href, image } = defineProps<{
 .notch::after {
   right: -0.1rem;
   bottom: calc(100% - 0.1rem);
-}
-
-@media(min-width: 800px) {
-  .tile {
-    aspect-ratio: 6/5;
-  }
 }
 
 @media(hover:hover) {

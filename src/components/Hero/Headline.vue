@@ -20,7 +20,7 @@ const { preload } = usePreload()
 </script>
 
 <template>
-  <h1 class="text-center text-3xl title mt-s" :class="{ preload }">
+  <h1 class="text-center text-3xl title mt-s" :class="{ preload, first: rotation < 1 }">
     <div class="rotor" :style="`--rotation: ${rotation}deg`">
       <span v-for="word, i in words">
         {{ word }}
@@ -31,7 +31,7 @@ const { preload } = usePreload()
   </h1>
 </template>
 
-<style>
+<style scoped>
 .title {
   perspective: 200rem;
   transition: opacity 1s ease;
@@ -39,6 +39,10 @@ const { preload } = usePreload()
 
 .title.preload {
   opacity: 0;
+}
+
+.first>.rotor {
+  transition: transform 1s cubic-bezier(0, 0, 0.175, 1);
 }
 
 .rotor {
@@ -81,7 +85,7 @@ const { preload } = usePreload()
 .subline {
   font-size: 2.4rem;
   letter-spacing: var(--tracking-tight);
-  transition: transform .7s 1.3s ease, opacity .7s 1.3s ease;
+  transition: transform .7s 0.3s ease, opacity .7s 0.3s ease;
 }
 
 .title.preload .subline {
