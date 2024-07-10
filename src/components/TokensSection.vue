@@ -29,11 +29,6 @@ const progress = ref(0)
         connect blockchains, regardless of their
         ecosystem.
       </h3>
-      <p class="color-secondary text-s mb-m">
-        *Currently, the market algorithms available in Polkaswap are XYK (smart liquidity), TBC (linked to the SORA
-        Token Bonding Curve providing reserve assets), and soon Aggregate Liquidity Technology (stay tuned for more
-        news).
-      </p>
       <div class="text-xs mx-auto color-secondary bold slot rounded-l flex gap-s bg-low aic py-3xs pl-s pr-3xs">
         Learn more at <Button to="https://sora.org" target="_blank" accent>SORA.org</Button>
       </div>
