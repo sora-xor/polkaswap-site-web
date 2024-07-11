@@ -39,6 +39,14 @@ export default defineNuxtConfig({
           href: '/apple-touch-icon.png',
         },
       ],
+      script: [
+        {
+          key: 'plausible',
+          defer: true,
+          src: 'https://plausible.io/js/script.js',
+          'data-domain': 'about.polkaswap.io',
+        },
+      ],
       meta: [
         {
           name: 'description',
