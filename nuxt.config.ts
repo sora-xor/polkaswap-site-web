@@ -1,15 +1,15 @@
-const title = 'Polkaswap',
+const title = 'Polkaswap — The DEX for the Interoperable Future',
   description =
-    'Cross-chain exchange of assets, simple creation and listing of new assets, and the easiest swaps ever. The interoperable future of Polkadot is here and we are at the forefront!',
+    'Polkaswap is a next-generation DeFi hub: A cross-chain liquidity aggregator, AMM, and order book DEX on the SORA network. Polkaswap offers cross-chain asset exchange with major Polkadot and EVM chains with TON coming soon.',
   keyWords =
-    'Polkaswap, DEX, Cross-chain, DeFi, AMM, Polkadot, Ecosystem, Interoperable, Future, SORA, SORA network, Kusama',
+    'polkadot dex, DEX, Cross-chain, stake, trade, earn rewards, pool, DeFi, AMM, Exchange, Polkadot, polkadot swap, SORA network, Kusama, Swap Tokens, TON',
   ogImage = `${process.env.NUXT_PUBLIC_BASE_URL || ''}/og.jpg`
 
 export default defineNuxtConfig({
   srcDir: 'src/',
   devtools: { enabled: false },
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxt/image'],
+  modules: ['@nuxt/image', '@nuxtjs/sitemap'],
 
   build: {
     transpile: ['gsap'],
