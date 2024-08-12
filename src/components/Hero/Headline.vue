@@ -4,16 +4,32 @@ const words = ['Trade', 'Swap', 'Pool', 'Earn']
 const rotation = ref(-360)
 
 let interval: any
-
-onMounted(() => {
-  rotation.value = 0
+const stop = () => {
+  clearInterval(interval)
+}
+const play = () => {
   interval = setInterval(() => {
     rotation.value += 90
   }, 2000)
+}
+const visibilityHandler = () => {
+  if (document.hidden) {
+    stop()
+  } else {
+    rotation.value += 90
+    play()
+  }
+}
+
+onMounted(() => {
+  rotation.value = 0
+  document.addEventListener("visibilitychange", visibilityHandler)
+  play()
 })
 
 onBeforeUnmount(() => {
-  clearInterval(interval)
+  document.removeEventListener("visibilitychange", visibilityHandler)
+  stop()
 })
 
 const { preload } = usePreload()
