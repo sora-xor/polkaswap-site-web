@@ -9,7 +9,7 @@ const items = [{
   image: { src: '/apps/fearless-wallet.jpg', alt: 'Fearless Wallet mobile app' }
 }, {
   title: 'Telegram App',
-  href: 'https://t.me/PolkaswapDevBot/app',
+  href: 'https://t.me/polkaswap_io_bot/app',
   image: { src: '/apps/telegram-app.jpg', alt: 'Polkaswap Telegram app' }
 }]
 </script>
