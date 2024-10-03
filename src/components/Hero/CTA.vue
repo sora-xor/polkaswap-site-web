@@ -1,5 +1,12 @@
 <script setup lang="ts">
 const { preload } = usePreload()
+const isAppsPopupOpen = useAppsPopupState()
+
+const openAppsPopup = () => {
+  setTimeout(() => {
+    isAppsPopupOpen.value = true
+  }, 0)
+}
 </script>
 
 <template>
@@ -14,7 +21,7 @@ const { preload } = usePreload()
           <Arrow class="text-m" direction='bottom' />
         </template>
       </Button>
-      <Button accent to="https://polkaswap.io" target="_blank">Get started</Button>
+      <Button accent @click="openAppsPopup">Get started</Button>
     </div>
   </div>
 </template>
