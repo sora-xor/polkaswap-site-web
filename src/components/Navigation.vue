@@ -5,7 +5,7 @@ defineProps<{
   isOpen: boolean
 }>()
 
-defineEmits(['navigate'])
+const emit = defineEmits(['navigate'])
 
 const anchors = [
   {
@@ -47,9 +47,9 @@ const transitionDelay = 0.05
         </ul>
         <ul>
           <li v-for="(social, i) in [{
-    title: 'SORA Wiki',
-    href: 'https://wiki.sora.org/',
-  }, ...socials]" :key="social.title">
+            title: 'SORA Wiki',
+            href: 'https://wiki.sora.org/',
+          }, ...socials]" :key="social.title">
             <a :href="social.href" class="text-xs bold hover-trigger py-4xs flex aic" target="_blank"
               :style="`--delay: ${(i + 2) * transitionDelay}s`">
               <span class="hover-underline">{{ social.title }}</span>
@@ -57,9 +57,13 @@ const transitionDelay = 0.05
             </a>
           </li>
         </ul>
-        <div class="app flex jcc">
-          <a href="https://polkaswap.io" class="text-xs bold py-3xs px-xxs rounded-m flex" target="_blank">
-            Launch App
+        <div class="app">
+          <a href="https://polkaswap.io" target="_blank" class="text-xs bold py-3xs px-xxs rounded-m flex jcc">
+            Web App
+          </a>
+          <a href="https://t.me/polkaswap_io_bot/app" target="_blank"
+            class="text-xs bold py-3xs px-xxs rounded-m flex jcc">
+            Telegram App
           </a>
         </div>
         <div class="logo px-l flex">
@@ -117,10 +121,17 @@ const transitionDelay = 0.05
   grid-column-end: span 2;
 }
 
+.app {
+  display: grid;
+  gap: var(--size-xs);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .app a {
   box-shadow: var(--shadow-convex);
   transition: box-shadow 1s var(--ease), transform 1s ease;
   transform: translateY(100%);
+  text-align: center;
 }
 
 .app a:active {

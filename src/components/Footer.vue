@@ -11,7 +11,16 @@ const legalLinks = [
   {
     title: 'Release Notes',
     href: 'https://github.com/sora-xor/polkaswap-exchange-web/releases/latest'
-  }]
+  }
+]
+
+const isAppsPopupOpen = useAppsPopupState()
+
+const openAppsPopup = () => {
+  setTimeout(() => {
+    isAppsPopupOpen.value = true
+  }, 0)
+}
 </script>
 
 <template>
@@ -21,7 +30,7 @@ const legalLinks = [
         <span class="hover-underline">{{ link.title }}</span>
       </a>
     </div>
-    <Button accent to="https://polkaswap.io" target="_blank" class="button">
+    <Button accent @click="openAppsPopup" class="button">
       Launch App
     </Button>
     <div class="copy p-3xs">&copy; {{ new Date().getFullYear() }}, Polkaswap</div>

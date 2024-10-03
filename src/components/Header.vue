@@ -1,29 +1,52 @@
 <script setup lang="ts">
-const isOpen = ref(false)
+const isMenuOpen = ref(false)
+const isAppsPopupOpen = useAppsPopupState()
 
 const close = () => {
-  isOpen.value = false
+  isMenuOpen.value = false
+  isAppsPopupOpen.value = false
+}
+
+const toggleMenu = () => {
+  if (isMenuOpen.value) {
+    isMenuOpen.value = false
+  } else {
+    isMenuOpen.value = true
+    isAppsPopupOpen.value = false
+  }
+}
+
+const togglePopup = () => {
+  if (isAppsPopupOpen.value) {
+    isAppsPopupOpen.value = false
+  } else {
+    isAppsPopupOpen.value = true
+    isMenuOpen.value = false
+  }
 }
 </script>
 
 <template>
-  <header class="header" :class="{ open: isOpen }" v-on-click-outside="close">
-    <div class="level1">
-      <div class="logo flex">
-        <NuxtLink to="/" class="flex">
-          <img src="/logo.svg" alt="Logo" width="240" height="70" />
-          <span class="visually-hidden">Home page</span>
-        </NuxtLink>
-      </div>
-      <Burger :isOpen="isOpen" @click="isOpen = !isOpen" />
-      <div class="cta px-xs">
-        <div class="flex">
-          <a href="https://polkaswap.io" class="text-xs bold hover-underline" target="_blank">Launch App</a>
+  <div v-on-click-outside="close">
+    <header class="header" :class="{ open: isMenuOpen }">
+      <div class="level1">
+        <div class="logo flex">
+          <NuxtLink to="/" class="flex">
+            <img src="/logo.svg" alt="Logo" width="240" height="70" />
+            <span class="visually-hidden">Home page</span>
+          </NuxtLink>
+        </div>
+        <Burger :isOpen="isMenuOpen" @click="toggleMenu" />
+        <div class="cta px-xs">
+          <div class="flex">
+            <button class="text-xs bold hover-underline" @click="togglePopup">Launch App</button>
+          </div>
         </div>
       </div>
-    </div>
-    <Navigation :isOpen="isOpen" @navigate="isOpen = false" />
-  </header>
+      <Navigation :isOpen="isMenuOpen" @navigate="isMenuOpen = false" />
+    </header>
+    <AppsPopup />
+  </div>
 </template>
 
 <style scoped>
