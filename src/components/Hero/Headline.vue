@@ -66,7 +66,7 @@ const { preload } = usePreload()
   height: 1.25em;
   transform-style: preserve-3d;
   transform: rotateX(var(--rotation, -360deg));
-  transition: transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: transform 1.6s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .rotor>span {
