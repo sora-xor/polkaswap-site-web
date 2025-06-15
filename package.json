@@ -15,9 +15,16 @@
     "@nuxtjs/sitemap": "^6.1.1",
     "gsap": "^3.12.5",
     "matter-js": "^0.20.0",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.16.0",
     "vue": "^3.5.11",
     "vue-router": "^4.4.5"
+  },
+  "resolutions": {
+    "undici": "5.29.0",
+    "brace-expansion": "2.0.2",
+    "vite": "^5.4.12",
+    "@nuxt/vite-builder": "3.15.3",
+    "esbuild": "0.25.0"
   },
   "devDependencies": {
     "@types/matter-js": "^0.19.7"
